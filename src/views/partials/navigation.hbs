@@ -1,0 +1,32 @@
+    
+    {{#if user}}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/links">|--LINKS--|</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex  justify-content-between" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/links/add">Crear Link</a>
+                    <a class="nav-item nav-link active" href="/links">Ver Links</a>
+                    <a class="nav-item nav-link active" href="/auth/profile">Profile</a>
+                </div>
+                <a class="nav-item nav-link btn-outline-primary mr-5" href="/auth/logout">Logout</a>
+            </div>
+        </nav>
+    {{else}}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">|--LINKS--|</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex  justify-content-between" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/auth/signin">SignIn</a>
+                    <a class="nav-item nav-link active" href="/auth/signup">SignUp</a>
+                </div>
+            </div>
+        </nav>
+    {{/if}}
